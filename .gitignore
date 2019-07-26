@@ -1,32 +1,75 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# ##################
+# fuente compilada #
+# ##################
+* .com
+* .clase
+* .dll
+* .exe
+* .pdb
+* .dll.config
+* .cache
+* .suo
+# Incluir dlls si están en el directorio de paquetes de NuGet
+! / packages / * / lib / * .dll
+! / packages / * / lib / * / * .dll
+# Incluir dlls si están en el directorio de referencias comunes
+! * CommonReferences / * .dll
+# ###################
+# VS Actualizar cosas #
+# ###################
+UpgradeLog.XML
+_UpgradeReport_Files /
+# ##############
+# Directorios #
+# ##############
+bin /
+obj /
+TestResults /
+# ##################
+# Registro de publicación web #
+# ##################
+* .Publish.xml
+# ############
+# Resharper #
+# ############
+/ _ReSharper. *
+* .ReSharper. *
+# ###########
+# Paquetes #
+# ###########
+# es mejor descomprimir estos archivos y confirmar la fuente en bruto
+# Git tiene su propio construido en los métodos de compresión
+* .7z
+* .dmg
+* .gz
+* .iso
+* .jar
+* .rar
+* .tar
+* .zip
+# #####################
+# Registros y bases de datos #
+# #####################
+* .log
+* .sqlite
+# OS generó archivos #
+# #####################
+.DS_Store ?
+ehthumbs.db
+Icono ?
+Thumbs.db
+[ Bb ] en
+[ Oo ] bj
+[ Tt ] est [ Rr ] resultados
+* .suo
+* .usuario
+* . [ Cc ] dolor
+* [ Rr ] esharper *
+paquetes
+NuGet.exe
+_ [ Ss ] criptas
+* .exe
+* .dll
+* .nupkg
+* .ncrunchsolution
+* .dot [ Cc ] sobre
